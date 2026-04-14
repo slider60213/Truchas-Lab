@@ -4,121 +4,12 @@
     <meta charset="UTF-8">
     <title>Truchas-Lab 文件導覽</title>
     <style>
-        /* 整體背景與基礎文字 */
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            padding: 40px; 
-            max-width: 900px; 
-            margin: auto; 
-            background-color: #0d1117; /* 深色背景 */
-            color: #ffffff; /* 一般文字設為白色 */
-        }
-
-        /* 頂部主標題 */
-        h1 { 
-            border-bottom: 1px solid #30363d; 
-            padding-bottom: 10px;
-            font-size: 2.2em;
-            color: #ffffff; 
-        }
-
-        /* 分類大標題 */
-        h2 { 
-            color: #58a6ff; /* 分類標題用淡淡的藍色區分 */
-            margin-top: 40px;
-            font-size: 1.5em;
-            display: flex;
-            align-items: center;
-        }
-
-        ul { list-style-type: none; padding: 0; }
-
-        /* 卡片容器 */
-        li { 
-            margin-bottom: 15px; 
-            padding: 20px; 
-            border: 1px solid #30363d; 
-            border-radius: 10px; 
-            background-color: #161b22; 
-        }
-
-        /* 可跳轉的連結：設為明顯的藍色 */
-        a { 
-            text-decoration: none; 
-            color: #58a6ff; 
-            font-weight: bold; 
-            font-size: 1.1em;
-        }
-
-        a:hover { 
-            text-decoration: underline; 
-        }
-
-        /* 非連結的敘述文字：設為純白或淺灰 */
-        .desc { 
-            color: #d1d5db; 
-            font-size: 0.95em; 
-            margin-top: 8px; 
-        }
-
-        /* 巢狀清單中的標題文字（非連結） */
-        strong {
-            color: #ffffff;
-            font-size: 1.1em;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .sub-list {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        .sub-item {
-            background-color: #0d1117;
-            padding: 10px;
-            margin-bottom: 8px;
-            border: 1px solid #30363d;
-        }
-
-        .folder-icon { margin-right: 12px; }
+        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 900px; margin: auto; background-color: #0d1117; color: #ffffff; }
+        h1 { border-bottom: 1px solid #30363d; }
+        h2 { color: #58a6ff; margin-top: 30px; }
+        li { margin-bottom: 10px; padding: 15px; border: 1px solid #30363d; border-radius: 8px; background-color: #161b22; }
+        a { text-decoration: none; color: #58a6ff; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>Truchas-Lab 模擬與研究筆記</h1>
-
-    <h2><span class="folder-icon">🐧</span>Ubuntu 環境設定</h2>
-    <ul>
-        <li>
-            <a href="Ubuntu/安裝紀錄.html">WSL2 / Ubuntu 環境建置</a>
-            <div class="desc">紀錄於 Ubuntu 系統下編譯 Truchas 與設定運作環境的流程。</div>
-        </li>
-    </ul>
-
-    <h2><span class="folder-icon">📦</span>Truchas v2.5.3</h2>
-    <ul>
-        <li>
-            <a href="2.5.3/版本更新筆記.html">版本更新筆記</a>
-            <div class="desc">針對 2.5.3 版本的特性與現有模擬邏輯的差異分析。</div>
-        </li>
-    </ul>
-
-    <h2><span class="folder-icon">🌊</span>VFIFE 模擬系列</h2>
-    <ul>
-        <li>
-            <strong>SOLID_module.F90 原始碼分析</strong>
-            <div class="desc">針對 SOLID 模組的逐段程式碼解析：</div>
-            <ul class="sub-list">
-                <li class="sub-item"><a href="VFIFE/SOLID_module_F90_01.html">第 01 部分：模組定義與變數初始化</a></li>
-                <li class="sub-item"><a href="VFIFE/SOLID_module_F90_02.html">第 02 部分：核心算法與邊界處理</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="VFIFE/VFIFE_dat檔參數註解.html">📄 VFIFE .dat 參數全註解手冊</a>
-            <div class="desc">關於 VFIFE 固體結構檔內各項參數的詳細說明與設定建議。</div>
-        </li>
-    </ul>
-
-</body>
-</html>
+    <h1>Truchas-Lab 模擬與研究筆記 (自動更新版)</h1><h2>Ubuntu</h2><ul><li><a href="Ubuntu/Truchas-Lab(116)_WSL_Setup_20260408_ENG.html">Truchas-Lab(116)_WSL_Setup_20260408_ENG.html</a></li><li><a href="Ubuntu/Truchas-Lab(116)_WSL_安裝教學_20260408.html">Truchas-Lab(116)_WSL_安裝教學_20260408.html</a></li><li><a href="Ubuntu/Truchas-Lab(116)編譯功能.html">Truchas-Lab(116)編譯功能.html</a></li></ul><h2>2.5.3</h2><ul></ul><h2>VFIFE</h2><ul><li><a href="VFIFE/SOLID_module_F90_01.html">SOLID_module_F90_01.html</a></li><li><a href="VFIFE/SOLID_module_F90_02.html">SOLID_module_F90_02.html</a></li><li><a href="VFIFE/VFIFE_dat檔參數註解.html">VFIFE_dat檔參數註解.html</a></li></ul></body></html>
