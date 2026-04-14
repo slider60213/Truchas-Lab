@@ -4,34 +4,51 @@
     <meta charset="UTF-8">
     <title>Truchas-Lab 文件導覽</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; }
-        h1 { border-bottom: 2px solid #333; }
+        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; background-color: #f9f9f9; }
+        h1 { border-bottom: 2px solid #333; color: #2c3e50; }
+        h2 { color: #2980b9; margin-top: 30px; }
         ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        li { margin-bottom: 10px; padding: 12px; border: 1px solid #eee; border-radius: 8px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         a { text-decoration: none; color: #0366d6; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        a:hover { text-decoration: underline; color: #0056b3; }
+        .desc { color: #666; font-size: 0.9em; margin-top: 5px; }
+        .folder-icon { margin-right: 8px; }
     </style>
 </head>
 <body>
     <h1>Truchas-Lab 模擬與研究筆記</h1>
-<ul>
-        <li>
-            <strong>📄 VFIFE 模擬系列</strong>
-            <ul>
-                <li><a href="VFIFE_dat檔參數註解.html">VFIFE .dat 參數詳細註解</a></li>
-            </ul>
-        </li>
 
-        <br>
-
+    <h2><span class="folder-icon">🐧</span>Ubuntu 環境設定</h2>
+    <ul>
         <li>
-            <strong>💻 SOLID_module.F90 原始碼分析</strong>
-            <p style="color: #666; font-size: 0.9em;">針對 SOLID 模組的逐段程式碼解析：</p>
-            <ul>
-                <li><a href="SOLID_module_F90_01.html">第 01 部分：模組定義與變數初始化</a></li>
-                <li><a href="SOLID_module_F90_02.html">第 02 部分：核心算法與邊界處理</a></li>
-                </ul>
+            <a href="Ubuntu/安裝紀錄.html">WSL2 / Ubuntu 環境建置</a>
+            <div class="desc">紀錄於 Ubuntu 系統下編譯 Truchas 與設定運作環境的流程。</div>
         </li>
     </ul>
+
+    <h2><span class="folder-icon">📦</span>Truchas v2.5.3</h2>
+    <ul>
+        <li>
+            <a href="2.5.3/版本變更說明.html">版本更新筆記</a>
+            <div class="desc">針對 2.5.3 版本的特性與現有模擬邏輯的差異分析。</div>
+        </li>
+    </ul>
+
+    <h2><span class="folder-icon">🌊</span>VFIFE 模擬系列</h2>
+    <ul>
+        <li>
+            <strong>SOLID_module.F90 原始碼分析</strong>
+            <div class="desc">針對 SOLID 模組的逐段程式碼解析：</div>
+            <ul style="margin-top: 10px; border-left: 2px solid #eee; padding-left: 15px;">
+                <li><a href="VFIFE/SOLID_module_F90_01.html">第 01 部分：模組定義與變數初始化</a></li>
+                <li><a href="VFIFE/SOLID_module_F90_02.html">第 02 部分：核心算法與邊界處理</a></li>
+            </ul>
+        </li>
+        <li style="margin-top: 15px;">
+            <a href="VFIFE/VFIFE_dat檔參數註解.html">📄 VFIFE .dat 參數全註解手冊</a>
+            <div class="desc">關於 VFIFE 固體結構檔內各項參數的詳細說明與設定建議。</div>
+        </li>
+    </ul>
+
 </body>
 </html>
