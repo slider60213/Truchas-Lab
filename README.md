@@ -1,3 +1,9 @@
+Check the following link for the latest info
+https://github.com/slider60213/Truchas-notes-auto-sync-Public-
+
+
+
+
 # Truchas-Lab
 2.0.0, MS3, VFIFE；2.0.2, 116；2.5.3, DBM
 
